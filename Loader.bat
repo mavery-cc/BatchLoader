@@ -61,7 +61,7 @@ COLOR B
 :install
     REM Create a temporary file that and put all of the hosts
     REM file contents in it excluding existing redirects
-    FINDSTR /V "159.203.120.188 s.optifine.net # INSERTED BY CLOAKS+" "%HOSTS_FILE%" > "%TEMP_HOSTS_FILE%"
+    FINDSTR /V "185.229.236.109 s.optifine.net" "%HOSTS_FILE%" > "%TEMP_HOSTS_FILE%"
     REM Add the redirect to the new file
     ECHO 185.229.236.109 s.optifine.net >> "%TEMP_HOSTS_FILE%"
     REM Replace the Hosts file with the Temp file
