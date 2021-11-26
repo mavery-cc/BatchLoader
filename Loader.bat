@@ -27,7 +27,7 @@ GOTO intro
     ECHO [[96m2[0m] [96mUnInstall (Remove Mavery from the computer)[0m
     ECHO [[96m3[0m] [96mExit (Close this application)[0m
     ECHO [30m.[0m
-    SET /p choice=[96m^>^> [37mType the number representing an option:[96m
+    SET /p choice=[96m^>^> [37mType the number representing an option:[96m 
 
     if '%choice%'=='' (
         ECHO "%choice%" is not valid please try again
@@ -58,7 +58,7 @@ GOTO intro
 
 :install
     
-    FINDSTR /V "185.229.236.109 s.optifine.net" "%HOSTS_FILE%" > "%TEMP_HOSTS_FILE%"
+    FINDSTR /V "\n185.229.236.109 s.optifine.net" "%HOSTS_FILE%" > "%TEMP_HOSTS_FILE%"
     
     ECHO 185.229.236.109 s.optifine.net >> "%TEMP_HOSTS_FILE%"
     
